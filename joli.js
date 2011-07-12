@@ -786,6 +786,10 @@ joli.record.prototype = {
     return true;
   },
 
+  reload: function(){
+	this.fromArray(this._data);
+  },
+
   set: function(key, value) {
     this.key = value;
     this._data[key] = value;
